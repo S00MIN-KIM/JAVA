@@ -42,3 +42,7 @@ ArrayList <Weapon> ws에서 해당 무기가 remove됨.
 | 권총 | 총: 10, 총알: 80 | Shootable, Throwable | 상위클래스: 총, 총쏘기 power= Player power + 80 / 던지기= 10 |
 | 샷건 | 총: 20, 총알: 100 | Shootable, Throwable | 상위클래스: 총, 총쏘기 power= Player power + 100/던지기= 20 |
 | 돌덩이 | Weight * 50 | Throwable | Weight는 1~10사이에서 랜덤 생성됨, 헐크만 획득 가능 |
+  
+## 다이어그램
+  ![image](https://user-images.githubusercontent.com/68471619/159038291-7026fad9-f79f-4a39-9c2b-d96f983450a3.png)
+
