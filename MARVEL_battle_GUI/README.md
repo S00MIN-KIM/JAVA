@@ -21,17 +21,12 @@
 
 | Player | 기본 HP | Power | 사용가능한 무기 | 공격 방법 Interface | 특이사항 |
 | --- | --- | --- | --- | --- | --- |
-| 아이언맨 | 1200 | 50 | 권총, 샷건 | Hitable
-Shootable | Player 생성시 80%의 확률로 수트 생성 (power+50, Hp
+| 아이언맨 | 1200 | 50 | 권총, 샷건 | Hitable, Shootable | Player 생성시 80%의 확률로 수트 생성 (power+50, Hp
 +200) |
-| 토르 | 1600 | 80 | 망치, 권총, 샷건, 돌덩이 | Hitable
-Shootable |  |
-| 헐크 | 2000 | 150 | 망치, 권총, 샷건, 돌덩이 | Hitable
-Throwable | Shootable한 무기도 던지기만 할 수 있음 |
-| 스파이더맨 | 1200 | 50 | 권총, 샷건 | Hitable
-Shootable | Player 생성시 80%의 확률로 수트 생성 Power+40, Hp+200 |
-| 블랙위도우 | 1500 | 80 | 권총, 샷건 | Hitable
-Shootable |  |
+| 토르 | 1600 | 80 | 망치, 권총, 샷건, 돌덩이 | Hitable, Shootable |  |
+| 헐크 | 2000 | 150 | 망치, 권총, 샷건, 돌덩이 | Hitable, Throwable | Shootable한 무기도 던지기만 할 수 있음 |
+| 스파이더맨 | 1200 | 50 | 권총, 샷건 | Hitable, Shootable | Player 생성시 80%의 확률로 수트 생성 Power+40, Hp+200 |
+| 블랙위도우 | 1500 | 80 | 권총, 샷건 | Hitable, Shootable |  |
 - Player가 때리면 자신의 power만큼 타겟의 hp가 감소
 - Player가 무기를 이용하여 때리거나 총을 쏘면 자신의 power + 무기의 power만큼 타겟의
 hp가 감소
@@ -43,17 +38,10 @@ ArrayList <Weapon> ws에서 해당 무기가 remove됨.
 
 | Weapon | power | Interface | 특이사항 |
 | --- | --- | --- | --- |
-| 망치 | 50 | Hitable
-Throwable | 토르만 계속 사용 가능. 헐크는 던져버림. 나머지는 획득 불가(power=50) |
+| 망치 | 50 | Hitable, Throwable | 토르만 계속 사용 가능. 헐크는 던져버림. 나머지는 획득 불가 (power=50) |
 | 권총 | 총: 10
-총알: 80 | Shootable
-Throwable | 상위클래스: 총
-총쏘기 power= Player power + 80
-던지기: 10 |
+총알: 80 | Shootable, Throwable | 상위클래스: 총, 총쏘기 power= Player power + 80 / 던지기= 10 |
 | 샷건 | 총: 20
-총알: 100 | Shootable
-Throwable | 상위클래스: 총
-총쏘기 power= Player power + 100
+총알: 100 | Shootable, Throwable | 상위클래스: 총, 총쏘기 power= Player power + 100
 던지기: 20 |
-| 돌덩이 | Weight * 50 | Throwable | Weight는 1~10사이에서 랜덤 생성됨
-헐크만 획득 가능 |
+| 돌덩이 | Weight * 50 | Throwable | Weight는 1~10사이에서 랜덤 생성됨, 헐크만 획득 가능 |
