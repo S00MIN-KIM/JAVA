@@ -40,6 +40,5 @@ ArrayList <Weapon> ws에서 해당 무기가 remove됨.
 | --- | --- | --- | --- |
 | 망치 | 50 | Hitable, Throwable | 토르만 계속 사용 가능. 헐크는 던져버림. 나머지는 획득 불가 (power=50) |
 | 권총 | 총: 10, 총알: 80 | Shootable, Throwable | 상위클래스: 총, 총쏘기 power= Player power + 80 / 던지기= 10 |
-| 샷건 | 총: 20, 총알: 100 | Shootable, Throwable | 상위클래스: 총, 총쏘기 power= Player power + 100
-던지기: 20 |
+| 샷건 | 총: 20, 총알: 100 | Shootable, Throwable | 상위클래스: 총, 총쏘기 power= Player power + 100/던지기= 20 |
 | 돌덩이 | Weight * 50 | Throwable | Weight는 1~10사이에서 랜덤 생성됨, 헐크만 획득 가능 |
